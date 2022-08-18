@@ -497,19 +497,30 @@
               name="user-name"
               required
             />
+            <svg class="modal-icon" width="18" height="18">
+              <use
+                class="input-icon"
+                href="./images/icons-sprite.svg#modal-name"
+              ></use>
+            </svg>
           </div>
           <div class="input-field">
-            <label for="user-tel" class="form-label">Телефон </label>
-            <input
-              type="tel"
-              id="user-tel"
-              class="form-input"
-              name="user-tel"
-              required
-            />
+            <label for="user-tel" class="form-label">Телефон</label>
+            <div class="input-focus">
+              <input
+                type="tel"
+                id="user-tel"
+                class="form-input"
+                name="user-tel"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons-sprite.svg#modal-tel"></use>
+              </svg>
+            </div>
           </div>
-          <div class="user-field">
-            <label for="user-mail" class="form-label">Пошта </label>
+          <div class="input-field">
+            <label for="user-mail" class="form-label">Пошта</label>
             <input
               type="email"
               id="user-mail"
@@ -517,23 +528,28 @@
               name="user-mail"
               required
             />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons-sprite.svg#modal-mail"></use>
+            </svg>
+          </div>
+          <div class="user-field">
+            <label for="user-comment" class="form-label"
+              >Коментар
+              <textarea
+                name=""
+                id="user-comment"
+                cols="30"
+                rows="10"
+                class="form-comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
           </div>
 
-          <label class="form-label"
-            >Коментар
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              class="form-comment"
-              placeholder="Введіть текст"
-            ></textarea>
-          </label>
           <button type="submit">Відправити</button>
         </form>
         <button type="button" class="modal-close" data-modal-close>
-          <svg class="modal-icon" width="18" height="18">
+          <svg class="modal-close-icon" width="18" height="18">
             <use href="./images/icons-sprite.svg#close"></use>
           </svg>
         </button>
