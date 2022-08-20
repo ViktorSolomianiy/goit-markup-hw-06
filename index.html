@@ -429,12 +429,12 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container footer-flex">
-        <div>
+        <div class="footer-address">
           <a class="logo link" href="index.html"
             ><span class="logo-span">Web</span
             ><span class="logo-studio-span">Studio</span></a
           >
-          <address class="footer-address">
+          <address>
             <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer-list list">
               <li class="footer-list-mail">
@@ -448,7 +448,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-join">
           <h2 class="footer-title title">Приєднуйтесь</h2>
           <ul class="footer-list-icon list">
             <li class="footer-item-icon">
@@ -481,10 +481,27 @@
             </li>
           </ul>
         </div>
+        <form class="footer-sub">
+          <h2 class="footer-title title">Підпишіться на розсилку</h2>
+          <div class="footer-sub-wrap">
+            <input
+              type="text"
+              class="footer-input"
+              name="footer-sub"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn-sub">
+              Підписатися
+              <svg class="footer-sub-icon" width="24" height="24">
+                <use href="./images/icons-sprite.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
@@ -539,7 +556,7 @@
           <label for="user-comment" class="form-label"
             >Коментар
             <textarea
-              name=""
+              name="user-comment"
               id="user-comment"
               cols="30"
               rows="10"
