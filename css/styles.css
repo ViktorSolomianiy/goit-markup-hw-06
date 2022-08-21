@@ -645,7 +645,7 @@ img {
   position: absolute;
   padding: 40px;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   background-color: #fff;
   border-radius: 4px;
   top: 50%;
@@ -702,6 +702,7 @@ img {
 
 .input-wrap {
   position: relative;
+  margin-top: 4px;
 }
 
 .input-field {
@@ -711,7 +712,6 @@ img {
 .form-input {
   width: 100%;
   height: 40px;
-  padding: 0;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -738,7 +738,8 @@ img {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 14px;
+  margin-top: 4px;
+  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
