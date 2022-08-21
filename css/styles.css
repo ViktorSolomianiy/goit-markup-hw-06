@@ -566,6 +566,7 @@ img {
 }
 
 .footer-input {
+  padding-left: 16px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -590,7 +591,6 @@ img {
 }
 
 .footer-input::placeholder {
-  padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   display: flex;
@@ -711,6 +711,7 @@ img {
 .form-input {
   width: 100%;
   height: 40px;
+  padding: 0;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -728,7 +729,7 @@ img {
 
 .form-label {
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--second-color);
 }
@@ -737,7 +738,7 @@ img {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -751,19 +752,19 @@ img {
 
 .form-comment::placeholder {
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .user-policy-field {
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
-.user-policy:checked + .user-policy-text span {
+.user-policy:checked + .user-policy-text > .user-check {
   background-color: var(--btn-color);
   fill: var(--btn-gallery-color);
   border: none;
@@ -779,7 +780,7 @@ img {
   color: var(--second-color);
 }
 
-.user-policy-text span {
+.user-policy-text > .user-check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -792,8 +793,23 @@ img {
 }
 
 .user-policy-link {
+  position: relative;
   margin-left: 5px;
   color: var(--btn-color);
+}
+
+.policy-underline {
+  display: inline-block;
+}
+
+.policy-underline::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 5px;
+  background-color: var(--btn-color);
 }
 
 .form-btn {
